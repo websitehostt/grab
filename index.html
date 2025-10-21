@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>Mock Mobile UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+  <div class="phone-frame w-[390px] h-[844px] bg-white rounded-[28px] overflow-hidden shadow-2xl flex flex-col">
+    <header class="bg-gradient-to-r from-emerald-400 to-teal-500 p-4 flex items-center space-x-3">
+      <div class="bg-white w-10 h-10 rounded-xl flex items-center justify-center shadow-md">
+        <img src="assets/img/qr.jpg" alt="scan" class="w-5 h-5 opacity-70">
+      </div>
+      
+      <div class="flex-1 bg-white flex items-center px-3 py-2 rounded-xl shadow-md">
+        <img src="assets/img/search.jpg" class="w-4 h-4 mr-2 opacity-60">
+        <input type="text" placeholder="Cari tempat" class="w-full text-sm outline-none bg-transparent">
+      </div>
+      
+      <div class="bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md">
+        <img src="assets/img/user.jpg" class="w-5 h-5 opacity-70">
+      </div>
+    </header>
+
+    <div class="flex-1 overflow-y-auto scrollbar-hide pb-20">
+      <section class="grid grid-cols-4 gap-3 p-3">
+        <div class="menu-item flex flex-col items-center justify-center bg-white rounded-2xl shadow-md p-3">
+          <img src="assets/img/motor.jpg" alt="Motor">
+        </div>
+        <div class="menu-item flex flex-col items-center justify-center bg-white rounded-2xl shadow-md p-3">
+          <img src="assets/img/makanan.jpg" alt="Makanan">
+        </div>
+        <div class="menu-item flex flex-col items-center justify-center bg-white rounded-2xl shadow-md p-3">
+          <img src="assets/img/mobil.jpg" alt="Mobil">
+        </div>
+        <div class="menu-item flex flex-col items-center justify-center bg-white rounded-2xl shadow-md p-3">
+          <img src="assets/img/express.jpg" alt="Express">
+        </div>
+        <div class="menu-item flex flex-col items-center justify-center bg-white rounded-2xl shadow-md p-3">
+          <img src="assets/img/belanja.jpg" alt="Belanja">
+        </div>
+        <div class="menu-item flex flex-col items-center justify-center bg-white rounded-2xl shadow-md p-3">
+          <img src="assets/img/pulsa.jpg" alt="Pulsa">
+        </div>
+        <div class="menu-item flex flex-col items-center justify-center bg-white rounded-2xl shadow-md p-3">
+          <img src="assets/img/dineout.jpg" alt="Dine Out">
+        </div>
+        <div class="menu-item flex flex-col items-center justify-center bg-white rounded-2xl shadow-md p-3">
+          <img src="assets/img/semua.jpg" alt="Semua">
+        </div>
+      </section>
+
+      <section class="p-3">
+        <h2 class="font-semibold text-[15px] mb-2">Pesan makan malam dari</h2>
+        <div class="flex space-x-3 overflow-x-auto scrollbar-hide">
+          <div class="promo-card"><img src="assets/img/ayam.jpg" alt="" class="rounded-xl w-full h-[120px] object-cover"><p class="text-sm font-medium mt-2">Ayam Bakar dan Nasi Uduk</p><span class="text-[12px] text-emerald-600">Diskon 60%</span></div>
+          <div class="promo-card"><img src="assets/img/coffee.jpg" alt="" class="rounded-xl w-full h-[120px] object-cover"><p class="text-sm font-medium mt-2">TOMORO COFFEE</p><span class="text-[12px] text-emerald-600">Diskon Rp15.000</span></div>
+          <div class="promo-card"><img src="assets/img/mie.jpg" alt="" class="rounded-xl w-full h-[120px] object-cover"><p class="text-sm font-medium mt-2">Mie Gacoan City</p><span class="text-[12px] text-emerald-600">Diskon Rp10.000</span></div>
+        </div>
+      </section>
+
+      <section class="p-3">
+        <h2 class="font-semibold text-[15px] mb-2">Rekomendasi restoran untukmu</h2>
+        <div class="grid grid-cols-2 gap-3">
+          <div class="rec-card"><img src="assets/img/promo1.jpg" alt="" class="rounded-xl w-full h-[100px] object-cover"><p class="text-sm mt-2 font-medium">Special Menu & Promo</p></div>
+          <div class="rec-card"><img src="assets/img/ayam.jpg" alt="" class="rounded-xl w-full h-[100px] object-cover"><p class="text-sm mt-2 font-medium">Ayam Geprek Mantap</p></div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="fixed bottom-0 left-1/2 -translate-x-1/2 w-[390px] bg-white border-t flex justify-around py-2 text-xs text-gray-500">
+      <div class="nav-item active text-emerald-500 text-center"><div>🏠</div>Beranda</div>
+      <div class="nav-item text-center"><div>🔍</div>Jelajahi</div>
+      <div class="nav-item text-center"><div>💳</div>Pembayaran</div>
+      <div class="nav-item text-center"><div>📦</div>Aktivitas</div>
+      <div class="nav-item text-center"><div>💬</div>Kotak Masuk</div>
+    </footer>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

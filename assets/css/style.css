@@ -1,0 +1,51 @@
+.promo-card, .rec-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 8px;
+  min-width: 160px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Responsif HP penuh (KODE INI DIPERBAIKI) */
+@media (max-width: 420px) {
+  /* Paksa body agar tidak centering di HP */
+  body {
+    display: block;
+    justify-content: initial;
+    align-items: initial;
+    background-color: #fff; /* Samakan background dgn app */
+  }
+
+  /* Paksa frame jadi full screen */
+  .phone-frame {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+.menu-item {
+  /* Atur tinggi kotak menu */
+  height: 90px;
+  transition: transform 0.2s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 100%; /* Gambar memenuhi kotak .menu-item */
+  object-fit: cover; /* Gambar full sekotak (terpotong) */
+  border-radius: 16px; /* Sesuaikan dgn radius kotak */
+}
